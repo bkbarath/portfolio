@@ -1,5 +1,5 @@
 import { AppBar } from "./components/molecules/common";
-import { HomeSection } from "./pages";
+import { HeroSection } from "./pages";
 
 function App() {
   return (
@@ -9,10 +9,7 @@ function App() {
 
       {/* body of content */}
       <div className="h-full">
-        <HomeSection />
-      </div>
-       <div className="h-full">
-        <HomeSection />
+        <HeroSection />
       </div>
     </main>
   );

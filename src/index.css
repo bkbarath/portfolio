@@ -20,4 +20,8 @@
 
   /* border colors */
   --color-secondary-border: #e1e4e8;
+
+  /* primary colors */
+  --color-primary-red: #f95720;
+  --color-primary-orange: #fa982c;
 }
