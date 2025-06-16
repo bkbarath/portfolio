@@ -1,0 +1,19 @@
+@layer components {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    box-shadow: none;
+  }
+
+  body {
+    font-family: var(--font-primary);
+    /* overflow-x: hidden; */
+    overflow-y: scroll;
+    transition: all 0.5s ease-in-out;
+    color: var(--color-primary-font);
+  }
+}

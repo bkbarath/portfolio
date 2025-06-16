@@ -1,0 +1,15 @@
+/* outfit */
+/* thin */
+@font-face {
+  src: url("../../assets/font/MouldyCheeseRegular.ttf") format("truetype");
+  font-family: "MouldyCheeseRegular";
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: tamil;
+  src: url("../../assets/font/1744012231_023.TTF") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
