@@ -12,8 +12,14 @@
   body {
     font-family: var(--font-primary);
     /* overflow-x: hidden; */
+    cursor: url("../assets/images/Profile.png") auto;
     overflow-y: scroll;
     transition: all 0.5s ease-in-out;
     color: var(--color-primary-font);
+  }
+
+  /* Add this in index.css or global.css */
+  .cursor-custom {
+    cursor: url("/public/vite.svg"), auto;
   }
 }

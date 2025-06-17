@@ -1,9 +1,9 @@
-import { AppBar } from "./components/molecules/common";
+import { AppBar, BottomBar } from "./components/molecules/common";
 import { HeroSection } from "./pages";
 
 function App() {
   return (
-    <main className="relative h-screen bg-secondary-background">
+    <main className="bg-secondary-background relative h-screen">
       {/* app bar component */}
       <AppBar />
 
@@ -11,6 +11,8 @@ function App() {
       <div className="h-full">
         <HeroSection />
       </div>
+
+      <BottomBar />
     </main>
   );
 }
