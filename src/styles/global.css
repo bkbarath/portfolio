@@ -22,4 +22,18 @@
   .cursor-custom {
     cursor: url("/public/vite.svg"), auto;
   }
+
+  @keyframes arrow-image-bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-2px);
+    }
+  }
+
+  .arrow-image-bounce {
+    animation: arrow-image-bounce 2s ease-in-out infinite;
+  }
 }

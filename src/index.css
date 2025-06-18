@@ -24,4 +24,9 @@
   /* primary colors */
   --color-primary-red: #f95720;
   --color-primary-orange: #fa982c;
+
+  /* social link colors */
+  --color-linkedin: #0a66c2;
+  --color-leetcode: #e6ad34;
+  --color-git: #3e2c00;
 }

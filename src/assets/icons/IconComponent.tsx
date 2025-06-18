@@ -2,6 +2,7 @@ import { type FC } from "react";
 import type { IconType } from "react-icons";
 import { BiMailSend, BiQuestionMark } from "react-icons/bi";
 import { FaGit } from "react-icons/fa";
+import { FcAndroidOs, FcGlobe, FcMindMap } from "react-icons/fc";
 import { LiaLinkedin } from "react-icons/lia";
 import { MdWork } from "react-icons/md";
 import { PiNotepadLight } from "react-icons/pi";
@@ -19,6 +20,9 @@ const IconList: { [key: string]: IconType } = {
   git: FaGit,
   linkedin: LiaLinkedin,
   leetcode: SiLeetcode,
+  android: FcAndroidOs,
+  web: FcGlobe,
+  api: FcMindMap,
 };
 
 type IconComponentProps = {
