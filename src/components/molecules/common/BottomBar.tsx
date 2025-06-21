@@ -19,7 +19,7 @@ const BottomBar = () => {
       variants={fadeIn("up")}
       animate="animate"
       initial="initial"
-      className="absolute bottom-2 left-[45%] z-999 flex gap-5 rounded-2xl border-1 p-3 backdrop-blur-lg backdrop-brightness-50"
+      className="fixed bottom-2 left-[45%] z-999 flex gap-5 rounded-2xl border-1 p-3 backdrop-blur-lg backdrop-brightness-50"
     >
       {MenuList.map((item) => (
         <a

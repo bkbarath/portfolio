@@ -12,6 +12,7 @@
   body {
     font-family: var(--font-primary);
     overflow-y: scroll;
+    overflow-x: hidden;
     color: var(--color-primary-font);
      /* cursor: url("/public/vite.svg"), auto; */
      user-select: none;

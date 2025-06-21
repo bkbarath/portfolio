@@ -29,4 +29,9 @@
   --color-linkedin: #0a66c2;
   --color-leetcode: #e6ad34;
   --color-git: #3e2c00;
+
+  /* mac colors */
+  --color-mac-green: #28c840;
+  --color-mac-yellow: #febc2e;
+  --color-mac-red: #ff5f57;
 }
