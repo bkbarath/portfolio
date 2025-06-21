@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
-import IconComponent from "../../../assets/icons/IconComponent";
+import IconComponent from "../../assets/icons/IconComponent";
 import {
   CurvedArrow,
   GitHub,
   LeetCode,
   LinkedIn,
   Profile,
-} from "../../../assets/images";
-import { bounce, fadeIn, fallIn } from "../../../styles/variant";
+} from "../../assets/images";
+import { bounce, fadeIn, fallIn } from "../../styles/variant";
 
 const Hero = () => {
   const Designation = ["Full-Stack", "Developer"];
@@ -116,7 +116,7 @@ const Hero = () => {
               {Stack.map((item) => (
                 <div className="group relative cursor-pointer">
                   <motion.div
-                    variants={bounce('vertical', item.delay)}
+                    variants={bounce("vertical", item.delay)}
                     animate="animate"
                     initial="initial"
                   >
@@ -136,7 +136,7 @@ const Hero = () => {
         <div className="flex justify-end">
           {/* CV Container */}
           <motion.div
-            variants={fallIn("left", 1.2)}
+            variants={fallIn("left", 1.4)}
             animate="animate"
             initial="initial"
             className="group border-primary-orange relative flex items-center gap-5 rounded-xl border-1"

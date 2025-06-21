@@ -1,16 +1,17 @@
 import { AppBar, BottomBar } from "./components/molecules/common";
-import { HeroSection } from "./pages";
+import { HeroSection, SkillSection } from "./pages";
 
 function App() {
   return (
-    <main className="bg-secondary-background relative h-screen">
+    <main className="bg-secondary-background h-full">
       {/* app bar component */}
       <AppBar />
 
       {/* body of content */}
-      <div className="h-full">
-        <HeroSection />
-      </div>
+      <HeroSection />
+
+      {/* Skill Container */}
+      <SkillSection />
 
       <BottomBar />
     </main>
