@@ -30,7 +30,7 @@ const Skill = () => {
         <motion.div
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, amount: 0.5 }}
+          // viewport={{ once: true, amount: 0.5 }}
           variants={fadeIn(item.fadeDirection)}
           className="border-primary-grey col-span-12 flex flex-col gap-5 rounded-2xl border-2 md:col-span-6 lg:col-span-6"
         >
