@@ -12,8 +12,6 @@ const BottomBar = () => {
     console.log(currentLocation, location.href.split("#")[1]);
   }, [currentLocation]);
 
-  console.log(location.href.split("#"));
-
   return (
     <motion.header
       variants={fadeIn("up")}

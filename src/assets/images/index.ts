@@ -32,3 +32,10 @@ export { default as AndroidStudio } from "./skill/android-studio.png";
 // database
 export { default as MongoDB } from "./skill/mongo-db.png";
 export { default as PostgreSQL } from "./skill/postgresql.png";
+export { default as MySQL } from "./skill/my-sql.png";
+
+// tools
+export { default as Docker } from "./skill/docker.png";
+export { default as Git } from "./skill/git.png";
+export { default as GitHubLogo } from "./skill/git-hub.png";
+export { default as PostMan } from "./skill/postman.png";

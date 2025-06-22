@@ -2,14 +2,19 @@ import {
   AndroidStudio,
   CSS,
   Dart,
+  Docker,
   Flutter,
+  Git,
+  GitHubLogo,
   HTML,
   Intellij,
   Java,
   JavaScript,
   MongoDB,
+  MySQL,
   NPM,
   PostgreSQL,
+  PostMan,
   React,
   SpringBoot,
   TailwindCss,
@@ -63,7 +68,11 @@ export type SkillKey =
   | "react"
   | "spring"
   | "tailwind"
-  | "visual-studio-code";
+  | "visual-studio-code"
+  | "docker"
+  | "git"
+  | "github"
+  | "postman";
 
 export const SkillImage = {
   "android-studio": AndroidStudio,
@@ -72,13 +81,17 @@ export const SkillImage = {
   flutter: Flutter,
   html: HTML,
   intellij: Intellij,
+  docker: Docker,
+  git: Git,
+  github: GitHubLogo,
+  postman: PostMan,
   java: Java,
   javascript: JavaScript,
   typescript: TypeScript,
   "mongo-db": MongoDB,
   npm: NPM,
   postgresql: PostgreSQL,
-  "my-sql": PostgreSQL,
+  "my-sql": MySQL,
   react: React,
   spring: SpringBoot,
   tailwind: TailwindCss,
@@ -94,6 +107,7 @@ export type ImageList = {
 export type SkillListTpe = {
   title: string;
   description?: string;
+  fadeDirection?: "up" | "down" | "left" | "right";
   list: ImageList[];
 };
 
@@ -101,6 +115,7 @@ export const SkillsList: SkillListTpe[] = [
   {
     title: "Programming",
     description: "",
+    fadeDirection: "down",
     list: [
       {
         image: "html",
@@ -136,6 +151,7 @@ export const SkillsList: SkillListTpe[] = [
   },
   {
     title: "Frameworks / Libraries",
+    fadeDirection: "down",
     list: [
       {
         image: "react",
@@ -162,6 +178,7 @@ export const SkillsList: SkillListTpe[] = [
   {
     title: "Data Base",
     description: "",
+    fadeDirection: "right",
     list: [
       {
         image: "mongo-db",
@@ -182,6 +199,7 @@ export const SkillsList: SkillListTpe[] = [
   {
     title: "IDEs",
     description: "",
+    fadeDirection: "left",
     list: [
       {
         image: "visual-studio-code",
@@ -203,28 +221,34 @@ export const SkillsList: SkillListTpe[] = [
     ],
   },
   {
-    title: "Data Base",
+    title: "Devops Tools",
     description: "",
+    fadeDirection: "up",
     list: [
       {
-        image: "mongo-db",
-        name: "Mongo DB",
+        image: "docker",
+        name: "Docker",
+      },
+      {
+        image: "git",
+        name: "Git",
         description: "",
       },
       {
-        image: "postgresql",
-        name: "PostgreSQL",
+        image: "github",
+        name: "Git Hub",
         description: "",
       },
       {
-        image: "my-sql",
-        name: "My SQL",
+        image: "postman",
+        name: "Postman",
       },
     ],
   },
   {
-    title: "Data Base",
+    title: "Soft-Skills",
     description: "",
+    fadeDirection: "up",
     list: [
       {
         image: "mongo-db",

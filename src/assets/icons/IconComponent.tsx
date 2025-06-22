@@ -5,10 +5,12 @@ import { FaGit } from "react-icons/fa";
 import { FcGlobe, FcMindMap, FcPhoneAndroid } from "react-icons/fc";
 import { FiDownload } from "react-icons/fi";
 import { LiaLinkedin } from "react-icons/lia";
-import { MdWork } from "react-icons/md";
+import { MdClear, MdWork } from "react-icons/md";
 import { PiNotepadLight } from "react-icons/pi";
+import { RiExpandUpDownFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
 import { TbChartBar, TbHome } from "react-icons/tb";
+import { VscChromeMinimize } from "react-icons/vsc";
 
 const IconList: { [key: string]: IconType } = {
   work: MdWork,
@@ -25,6 +27,9 @@ const IconList: { [key: string]: IconType } = {
   web: FcGlobe,
   api: FcMindMap,
   download: FiDownload,
+  minimize: VscChromeMinimize,
+  cancel: MdClear,
+  expand: RiExpandUpDownFill,
 };
 
 type IconComponentProps = {
