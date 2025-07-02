@@ -1,7 +1,8 @@
-import type { Variants } from "framer-motion";
+import { type Variants } from "framer-motion";
 
 export const fadeIn = (
   direction: "up" | "down" | "left" | "right" = "up",
+  delay: number = 0,
 ): Variants => {
   let y = 0;
   if (direction === "up") {
@@ -29,6 +30,7 @@ export const fadeIn = (
       opacity: 1,
 
       transition: {
+        delay: delay,
         duration: 1,
         ease: "easeInOut",
       },
@@ -89,6 +91,22 @@ export const bounce = (
         duration: 2,
         ease: "linear",
         repeat: Infinity,
+      },
+    },
+  };
+};
+
+export const grow = () => {
+  return {
+    initial: {
+      height: 0,
+    },
+    animate: {
+      height: "100%",
+
+      transition: {
+        duration: 5,
+        ease: "easeInOut",
       },
     },
   };

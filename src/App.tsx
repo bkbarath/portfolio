@@ -1,5 +1,11 @@
 import { AppBar, BottomBar } from "./components/molecules/common";
-import { HeroSection, SkillSection } from "./pages";
+import {
+  ContactSection,
+  ExperienceSection,
+  HeroSection,
+  ProjectSection,
+  SkillSection,
+} from "./pages";
 
 function App() {
   return (
@@ -13,6 +19,16 @@ function App() {
       {/* Skill Container */}
       <SkillSection />
 
+      {/* Experience Container */}
+      <ExperienceSection />
+
+      {/* Project Container */}
+      <ProjectSection />
+
+      {/* Experience Container */}
+      <ContactSection />
+
+      {/* Bottom navigation */}
       <BottomBar />
     </main>
   );

@@ -1,6 +1,6 @@
 //export images
 export { default as Profile } from "./Profile.webp";
-export { default as TamilNadu } from "./TamilNadu.png";
+export { default as TamilNadu } from "./tamilnadu.webp";
 export { default as CurvedArrow } from "./curved-arrow.svg";
 
 //export social links

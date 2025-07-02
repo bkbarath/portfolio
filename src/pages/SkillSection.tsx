@@ -2,7 +2,7 @@ import { Skill } from "../components/organisms";
 
 const SkillSection = () => {
   return (
-    <section id="skill" className="relative">
+    <section id="skill" className="">
       <Skill />
     </section>
   );
