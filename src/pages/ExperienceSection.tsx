@@ -2,7 +2,7 @@ import { Experience } from "../components/organisms";
 
 const ExperienceSection = () => {
   return (
-    <section id="experience" className="h-screen">
+    <section id="experience" className="min-h-screen">
       <Experience />
     </section>
   );

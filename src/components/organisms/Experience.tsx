@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
-import { fadeIn } from "../../styles/variant";
 import { SkillImage, type SkillKey } from "../../lib/data/common.data";
+import { fadeIn } from "../../styles/variant";
+import {
+  getDateAsDDMMYYYYOrPresent,
+  getDifference,
+} from "../../utils/common/functional.util";
 
 const Experience = () => {
   type ExperienceType = {
@@ -20,7 +24,7 @@ const Experience = () => {
       companyImage:
         "https://graspear.com/images/09/cropped-GRASPEAR-New-284x300.webp", // Optional: Add image URL if available
       companyURL: "https://www.graspear.com", // Update if different
-      from: new Date("2024-05-01"),
+      from: new Date("2024-07-01"),
       to: new Date(), // Present
       designation: "Software Engineer",
       about:
@@ -42,8 +46,8 @@ const Experience = () => {
       companyImage:
         "https://graspear.com/images/09/cropped-GRASPEAR-New-284x300.webp", // Optional: Add image URL if available
       companyURL: "https://www.graspear.com", // Update if different
-      from: new Date("2023-07-01"),
-      to: new Date("2024-05-31"),
+      from: new Date("2023-06-29"),
+      to: new Date("2024-06-29"),
       designation: "Software Developer Intern",
       about:
         "Built three live web applications utilizing React.JS, MUI, and AntD libraries for interactive data visualizations. Designed and developed robust backend services with Java, Spring Boot, and PostgreSQL. Collaborated with senior developers to address project requirements, focusing on testing, debugging, and delivering high-quality code.",
@@ -69,7 +73,7 @@ const Experience = () => {
         <p>Not just jobs — milestones in my maker's journey.</p>
       </div>
 
-      <ol className="m-auto flex h-full w-full flex-col items-center justify-center md:w-2/3 lg:w-4/5">
+      <ol className="m-auto flex h-full w-full flex-col items-center justify-center md:w-[90%] lg:w-4/5">
         {Experience.map((item, index) => (
           <motion.li
             initial="initial"
@@ -78,6 +82,17 @@ const Experience = () => {
             key={item.designation}
             className="relative w-9/10 border-s-2 py-5 pl-15 md:w-8/10 lg:max-w-2/3"
           >
+            <div className="top-[10%] -left-65 mb-2 flex justify-between md:flex-row lg:absolute lg:w-50 lg:flex-col">
+              <p className="text-right">
+                {[
+                  getDateAsDDMMYYYYOrPresent(item.from),
+                  getDateAsDDMMYYYYOrPresent(item.to),
+                ].join(" - ")}
+              </p>
+              <p className="text-primary-grey text-right text-sm">
+                {getDifference(item.from, item.to)}
+              </p>
+            </div>
             <div className="absolute -left-10">
               <div className="bg-primary-button-bg h-20 w-20 rounded-[30%] border-1 p-1">
                 <img src={item.companyImage} alt={item.company} className="" />
@@ -92,8 +107,10 @@ const Experience = () => {
               </div>
               <p>{item.about}</p>
               <div className="flex flex-col flex-wrap gap-2">
-                <p className="text-sm text-primary-grey">Things I have newly learned</p>
-                <div className="flex gap-2">
+                <p className="text-primary-grey text-sm">
+                  Things I have newly learned
+                </p>
+                <div className="flex flex-wrap gap-2">
                   {item.skills.map((skill) => (
                     //   <p className="rounded-xl border-1 p-1 px-2">{skill}</p>
                     <img

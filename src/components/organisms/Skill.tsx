@@ -1,7 +1,7 @@
 import IconComponent from "../../assets/icons/IconComponent";
 import { SkillImage, SkillsList } from "../../lib/data/common.data";
 import { fadeIn } from "../../styles/variant";
-import Tooltip from "../atoms/Tooltip";
+import Tooltip from "../atoms/common/Tooltip";
 import { motion } from "framer-motion";
 
 const Skill = () => {

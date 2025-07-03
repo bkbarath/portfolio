@@ -3,6 +3,8 @@ import IconComponent from "../../../assets/icons/IconComponent";
 import useActiveSection from "../../../hooks/useActiveSection";
 import { MenuList } from "../../../lib/data/common.data";
 import { fadeIn } from "../../../styles/variant";
+import { DownloadCV, HireMeButton } from "../../atoms";
+import Tooltip from "../../atoms/common/Tooltip";
 
 const BottomBar = () => {
   const { activeSection, setActiveSection } = useActiveSection();
@@ -26,12 +28,25 @@ const BottomBar = () => {
   };
 
   return (
-    <motion.header
+    <motion.footer
       variants={fadeIn("up")}
       animate="animate"
       initial="initial"
-      className="fixed bottom-2 left-1/2 z-999 flex -translate-x-1/2 transform gap-5 rounded-2xl border-1 p-3 backdrop-blur-lg backdrop-brightness-50"
+      className="fixed bottom-2 left-1/2 z-999 flex -translate-x-1/2 transform gap-5 rounded-2xl border-1 p-3 items-center backdrop-blur-lg backdrop-brightness-50"
     >
+      <div
+        className={`absolute transition-all duration-300 ${
+          activeSection !== "hero" ? "-translate-x-20" : "w-0 opacity-0"
+        }`}
+      >
+        <Tooltip
+          className="bg-primary-button-bg h-full w-full rounded-2xl backdrop-blur-2xl"
+          text="Download CV"
+        >
+          <DownloadCV iconOnly={true} />
+        </Tooltip>
+      </div>
+
       <div className="relative flex gap-5">
         <div
           className={`bg-primary-orange absolute h-full w-2/14 rounded-lg transition-all duration-300 ease-in-out ${getPosition()}`}
@@ -52,7 +67,20 @@ const BottomBar = () => {
           </a>
         ))}
       </div>
-    </motion.header>
+
+      <div
+        className={`absolute transition-all duration-300 ${
+          activeSection !== "hero" ? "left-75" : "w-0 opacity-0 left-50"
+        }`}
+      >
+        <Tooltip
+          className="bg-primary-button-bg h-full w-full rounded-2xl backdrop-blur-2xl"
+          text="Hire me"
+        >
+          <HireMeButton iconOnly={true} />
+        </Tooltip>
+      </div>
+    </motion.footer>
   );
 };
 
