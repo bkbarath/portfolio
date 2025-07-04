@@ -18,13 +18,22 @@
     overflow-y: scroll;
     overflow-x: hidden;
     color: var(--color-primary-font);
-     /* cursor: url("/public/vite.svg"), auto; */
-     user-select: none;
+    /* cursor: url("/public/vite.svg"), auto; */
+    user-select: none;
   }
 
   /* Add this in index.css or global.css */
   .cursor-custom {
     cursor: url("/public/vite.svg"), auto;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 
   @keyframes arrow-image-bounce {

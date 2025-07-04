@@ -13,18 +13,6 @@ const Skill = () => {
         <p>Fuel Behind My Projects</p>
       </div>
 
-      {/* double side card */}
-      {/* <div className="group h-[250px] w-[200px]">
-        <div className="relative h-full w-full transition-transform duration-600 transform-3d group-hover:rotate-y-180">
-          <div className="absolute flex h-full w-full items-center justify-center backface-hidden">
-            Front
-          </div>
-          <div className="absolute flex h-full w-full rotate-y-180 items-center justify-center backface-hidden">
-            Back
-          </div>
-        </div>
-      </div> */}
-
       {/* Skill list container */}
       {SkillsList.map((item) => (
         <motion.div
