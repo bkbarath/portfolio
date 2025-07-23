@@ -6,7 +6,7 @@ import { HireMeButton } from "../../atoms";
 
 const AppBar = () => {
   const { activeSection } = useActiveSection();
-  console.log(activeSection);
+
   return (
     <motion.header
       variants={fadeIn("down")}

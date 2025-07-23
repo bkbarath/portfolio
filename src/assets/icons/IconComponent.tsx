@@ -1,6 +1,6 @@
 import { type FC } from "react";
 import type { IconType } from "react-icons";
-import { BiMailSend, BiQuestionMark } from "react-icons/bi";
+import { BiMailSend, BiQuestionMark, BiRightArrowAlt } from "react-icons/bi";
 import { FaGit } from "react-icons/fa";
 import { FcGlobe, FcMindMap, FcPhoneAndroid } from "react-icons/fc";
 import { FiDownload } from "react-icons/fi";
@@ -30,6 +30,7 @@ const IconList: { [key: string]: IconType } = {
   minimize: VscChromeMinimize,
   cancel: MdClear,
   expand: RiExpandUpDownFill,
+  rightArrow: BiRightArrowAlt,
 };
 
 type IconComponentProps = {

@@ -16,10 +16,11 @@ const HireMeButton: FC<ButtonProps> = ({
   return (
     <>
       {iconOnly ? (
-        <button
-          onClick={() => {
-            if (onClick) onClick();
-          }}
+        <a
+          // onClick={() => {
+          //   if (onClick) onClick();
+          // }}
+          href="#contact"
           type={type}
           className="bg-primary-button-bg group border-primary-orange flex w-12 items-center justify-center gap-2 rounded-xl border-1 p-1 hover:cursor-pointer"
         >
@@ -33,12 +34,13 @@ const HireMeButton: FC<ButtonProps> = ({
               className={`text-primary-background bg-primary-orange group-hover:text-primary-background rounded-lg p-1 text-3xl transition-all duration-500 group-hover:translate-x-8 group-hover:opacity-0`}
             />
           </div>
-        </button>
+        </a>
       ) : (
-        <button
-          onClick={() => {
-            if (onClick) onClick();
-          }}
+        <a
+          // onClick={() => {
+          //   if (onClick) onClick();
+          // }}
+          href="#contact"
           type={type}
           className="bg-primary-button-bg group border-primary-orange flex w-30 items-center justify-center gap-2 rounded-xl border-1 p-1 hover:cursor-pointer"
         >
@@ -55,7 +57,7 @@ const HireMeButton: FC<ButtonProps> = ({
               {text}
             </p>
           </div>
-        </button>
+        </a>
       )}
     </>
   );

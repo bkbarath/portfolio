@@ -32,7 +32,7 @@ const BottomBar = () => {
       variants={fadeIn("up")}
       animate="animate"
       initial="initial"
-      className="fixed bottom-2 left-1/2 z-999 flex -translate-x-1/2 transform gap-5 rounded-2xl border-1 p-3 items-center backdrop-blur-lg backdrop-brightness-50"
+      className="fixed bottom-2 left-1/2 z-9999 flex -translate-x-1/2 transform gap-5 rounded-2xl border-1 p-3 items-center backdrop-blur-lg backdrop-brightness-50"
     >
       <div
         className={`absolute transition-all duration-300 ${
@@ -70,7 +70,7 @@ const BottomBar = () => {
 
       <div
         className={`absolute transition-all duration-300 ${
-          activeSection !== "hero" ? "left-75" : "w-0 opacity-0 left-50"
+          activeSection !== "hero" ? "left-75" : "w-0 opacity-0 -z-0 left-50"
         }`}
       >
         <Tooltip
