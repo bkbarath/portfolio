@@ -12,14 +12,10 @@ const HireMeButton: FC<ButtonProps> = ({
   type,
   iconOnly,
 }) => {
-  const onClick = () => {};
   return (
     <>
       {iconOnly ? (
         <a
-          // onClick={() => {
-          //   if (onClick) onClick();
-          // }}
           href="#contact"
           type={type}
           className="bg-primary-button-bg group border-primary-orange flex w-12 items-center justify-center gap-2 rounded-xl border-1 p-1 hover:cursor-pointer"
